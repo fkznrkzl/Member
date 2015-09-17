@@ -62,6 +62,7 @@ public class LoginController {
 		try {
 			AuthInfo auth = service.authenticate(login.getEmail(), login.getPassword());
 			session.setAttribute("auth", auth);
+			session.setAttribute("auth2", auth2);
 		} catch (IdPasswordNotMatchException ex) {
 			errors.reject("idPasswordNotMatch");
 			return "login/loginForm";
