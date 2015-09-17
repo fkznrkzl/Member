@@ -17,7 +17,7 @@ import com.webapp.model.AuthInfo;
 import com.webapp.service.AuthService;
 
 @Controller
-@RequestMapping("/login")
+@RequestMapping("/login/process")
 public class LoginController {
 	
 	static Log log = LogFactory.getLog(LoginController.class);
